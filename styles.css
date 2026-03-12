@@ -41,6 +41,7 @@ body {
     flex-shrink: 0;
 }
 
+/* Card header area: title + price + feature list */
 .card-top {
     display: flex;
     flex-direction: column;
@@ -63,12 +64,14 @@ body {
     align-items: baseline;
 }
 
+/* Main price value (e.g. Free, $20) */
 .card-price-amount {
     font-size: 22px;
     font-weight: 400;
     color: rgba(38, 37, 30, 0.5);
 }
 
+/* Period label (e.g. /mo.) — smaller, same muted color */
 .card-price-period {
     font-size: 14px;
     color: rgba(38, 37, 30, 0.5);
@@ -79,12 +82,14 @@ body {
     margin-bottom: 32px;
 }
 
+/* "Includes:" / "Everything in Hobby, plus:" — 16px, muted */
 .includes-text {
     font-size: 16px;
     color: rgba(38, 37, 30, 0.5);
     margin: 16px 0px;
 }
 
+/* Feature list: no bullets, 8px between items */
 .features-list {
     list-style: none;
     padding: 0;
@@ -98,6 +103,7 @@ body {
     color: #26251e;
 }
 
+/* Checkmark (✓) before each feature — 14px, 10px right margin */
 .checkmark {
     color: #26251e;
     font-size: 14px;
@@ -121,6 +127,7 @@ body {
     transition: background-color 0.2s ease;
 }
 
+/* Hover: slightly darker gray */
 .download-button:hover {
     background-color: #D8D6CE;
 }
