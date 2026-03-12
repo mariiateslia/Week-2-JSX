@@ -1,9 +1,12 @@
+/* ========== RESET ========== */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* ========== PAGE ========== */
+/* Centered layout, full height; Inter + off-white bg #f7f7f4 */
 body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     background-color: #f7f7f4;
@@ -14,6 +17,8 @@ body {
     padding: 20px;
 }
 
+/* ========== CARDS CONTAINER ========== */
+/* Horizontal flex, 24px gap, no wrap */
 .cards-container {
     display: flex;
     flex-direction: row;
@@ -23,6 +28,8 @@ body {
     align-items: flex-start;
 }
 
+/* ========== CARD ========== */
+/* Single plan: 320×380min, bg #f2f1ed, 16px padding */
 .card {
     display: flex;
     flex-direction: column;
@@ -39,6 +46,7 @@ body {
     flex-direction: column;
 }
 
+/* Plan name (e.g. Hobby, Pro) */
 .card-title {
     font-size: 22px;
     line-height: 28px;
@@ -47,6 +55,7 @@ body {
     margin-bottom: 8px;
 }
 
+/* Price row: amount + period on one baseline */
 .card-price {
     font-size: 20px;
     color: rgba(38, 37, 30, 0.5);
@@ -65,6 +74,7 @@ body {
     color: rgba(38, 37, 30, 0.5);
 }
 
+/* “Includes:” + feature list; space above button */
 .card-content {
     margin-bottom: 32px;
 }
@@ -95,6 +105,8 @@ body {
     font-weight: 400;
 }
 
+/* ========== BUTTONS ========== */
+/* Base: pill shape, gray; margin-top auto pushes to bottom of card */
 .download-button {
     margin-top: auto;
     width: fit-content;
@@ -117,6 +129,7 @@ body {
     background-color: #D8D6CE;
 }
 
+/* Primary: dark bg, white text (main CTA) */
 .download-button.primary {
     background-color: #111;
     color: #fff;
@@ -129,7 +142,20 @@ body {
 .download-button.primary:active {
     background-color: #333;
 }
+.download-button.tertiary {
+    background-color: transparent;
+    color: #333;
+    border: 1px solid #b3b3b3;
+}
+.download-button.tertiary:hover {
+    background-color: #c5c6b4;
+}
 
+.download-button.tertiary:active {
+    background-color: #b3b3b3;
+}
+/* ========== PAGE LABEL ========== */
+/* Fixed top-center badge (“HTML version”) */
 .page-label {
     position: fixed;
     top: 16px;
